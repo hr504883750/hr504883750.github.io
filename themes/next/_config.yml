@@ -35,7 +35,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Regal Brown"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -93,10 +93,10 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
-  archives: /archives/ || archive
+  about: /about/ || user              # 关于
+  tags: /tags/ || tags                # 标签
+  categories: /categories/ || th      # 分类
+  archives: /archives/ || archive     # 归档页
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -104,7 +104,11 @@ menu:
 # Enable/Disable menu icons.
 menu_icons:
   enable: true
-
+  home: home
+  about: user
+  categories: th
+  tags: tags
+  archives: archive
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -115,6 +119,13 @@ menu_icons:
 scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
+
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+#links_title #以下是侧边栏的友情链接，你们的配置文件中可能没有，按我的样式添加即可。
+#links_title: 
 
 
 # ---------------------------------------------------------------
