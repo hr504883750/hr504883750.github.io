@@ -13,7 +13,8 @@
 # Set to true, if you want to fully override the default configuration.
 # Useful if you don't want to inherit the theme _config.yml configurations.
 override: false
-
+cache:
+    enable: true # 表示添加缓存功能，这样浏览器后续打开我们的博客网站会更快
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
@@ -23,6 +24,7 @@ override: false
 
 # Default NexT favicons placed in `hexo-site/themes/next/source/images/` directory.
 # And if you want to place your icons in `hexo-site/source/` root directory, you must remove `/images` prefix from pathes.
+
 
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
@@ -282,7 +284,7 @@ android_chrome_color: "#222"
 #   image: url-of-image   - Images's url
 custom_logo:
   enabled: false
-  image:
+  image: 
 
 # Code Highlight theme
 # Available value:
@@ -705,9 +707,15 @@ pace: false
 # pace_theme: pace-theme-center-simple
 pace_theme: pace-theme-minimal
 
-# Canvas-nest
-canvas_nest: false
-
+# Canvas-nest  # 网格背景
+canvas_nest: 
+  enable: true
+  onmobile: true
+  color: '0,0,0'
+  opacity: 0.5
+  zIndex: -1
+  count: 150
+ 
 # three_waves
 three_waves: false
 
