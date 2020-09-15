@@ -12,7 +12,7 @@ tags:
 # 查看下本地 ~/.ssh 下是否有自己常用的 id_rsa id_rsa.pub 私钥跟公钥
 
 # 默认生成路径~/.ssh
-$ ssh-keygen -t rsa -C "邮箱地址" # 不写-C也没事，生成私钥公钥
+$ ssh-keygen -o -t rsa -C "your.email@example.com" -b 4096 # 不写-C也没事，生成私钥公钥
 
 $ chmod 700 ~/.ssh
 $ cd ~/.ssh
@@ -23,7 +23,6 @@ id_rsa，私钥，必要
 id_rsa.pub，公钥，必要，留待以后添加到其他远程主机
 
 known_hosts，记录本机ssh免密登陆的远程主机列表，可选
-
 -------------------------------------------------------------------------
 
 # 服务端

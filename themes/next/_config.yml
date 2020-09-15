@@ -94,11 +94,11 @@ index_with_subtitle: false
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
-  home: / || home
-  about: /about/ || user              # 关于
-  tags: /tags/ || tags                # 标签
-  categories: /categories/ || th      # 分类
-  archives: /archives/ || archive     # 归档页
+  home: /|| home
+  about: /about|| user              # 关于
+  tags: /tags|| tags                # 标签
+  categories: /categories|| th      # 分类
+  archives: /archives|| archive     # 归档页
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -118,9 +118,9 @@ menu_icons:
 
 # Schemes
 #scheme: Muse
-scheme: Mist
+#scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -243,9 +243,9 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
-  totalcount: false
+  wordcount: true
+  min2read: true
+  totalcount: true
   separated_meta: true
 
 # Wechat Subscriber
@@ -617,7 +617,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -711,10 +711,10 @@ pace_theme: pace-theme-minimal
 canvas_nest: 
   enable: true
   onmobile: true
-  color: '0,0,0'
+  color: '0,0,255'
   opacity: 0.5
   zIndex: -1
-  count: 150
+  count: 99
  
 # three_waves
 three_waves: false
@@ -821,6 +821,15 @@ vendors:
   # needMoreShare2
   # https://github.com/revir/need-more-share2
   needMoreShare2:
+
+
+#添加站内搜索按钮
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
 
 
 # Assets

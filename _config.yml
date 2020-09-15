@@ -93,6 +93,16 @@ archive_generator: # 归档页的配置
 tag_generator:
   per_page: 20 # 标签页每页博客数
 
+# 站点阅读数配置
+symbols_count_time:
+ #文章内是否显示
+  symbols: true
+  time: true
+ # 网页底部是否显示
+  total_symbols: true
+  total_time: true
+
+
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
